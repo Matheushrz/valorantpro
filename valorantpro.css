@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+
+/* root se equipara à raiz de uma árvore*/
+:root{
+    --primary-color-red:hsl(0, 100%, 74%) ;
+    --primary-color-green:hsl(154, 59%, 51%);
+    --accent-blue:hsl(248, 32%, 49%);
+    --dark-blue:hsl(249, 10%, 26%);
+    --grayish-blue:hsl(246, 25%, 77%);
+    --input-color:#f6f9f9;
+    --white-color:#fff;
+    --body-font:'Poppins', sans-serif;
+    --biggest-font-size:2.5rem;
+    --h1-font-size:2rem;
+    --h2-font-size:1.25rem;
+    --h3-font-size:1rem;
+    --normal-font-size:16px;
+    --smaller-font-size:.813rem;
+    --smallest-font-size:.75rem;
+    --font-normal:400;
+    --font-medium:500;
+    --font-semi-bold:600;
+    --font-bold:700;
+    --mb-1-5:1.5rem;
+    --mb-1-75:1.75rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-normal);
+    color: var(--input-color);
+    display: grid;
+    background: url(valorant4.jpg) var(--primary-color-red)
+}
+h1{
+    color: var(--white-color);
+    font-weight:var(--font-bold);
+}
+input:focus, input[type]:focus{   
+    border-color: 15px solid var(--dark-blue);
+    outline: 0 none;
+}
+button,
+input{
+    border: none;
+    font-size: var(--normal-font-size);
+}
+
+button{
+    cursor: pointer;
+    
+}
+input{
+    border: 1px solid #cecbcbea;
+}
+.section{
+    padding: 5.5rem 0 2.5rem;
+}
+.container{
+    max-width: 986px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.section_title{
+    font-size: var(--h1-font-size);
+    color:var(--white-color);
+    text-align: center;
+    margin-bottom: var(--mb-1-75);
+}
+
+.section_info{
+    text-align: center;
+}
+.section_two{
+    margin-top: 3rem;
+}
+.top{
+    width: 100%;
+    padding: 1.2rem 3rem;
+    border-radius: 10px;
+    background-color:var(--accent-blue);
+    color: #ddd;
+    line-height: 25px;
+    font-size:.98rem;
+    color:#eee;
+    box-shadow: 0rem .45rem .1rem hsla(249, 10%, 26%, 0.25);
+}
+.bold{
+    color: var(--white-color);
+    font-weight: var(--font-bold);
+}
+.form{
+    margin-top: 2rem;
+    border-radius: 10px;
+    background-color:var(--white-color);
+    opacity: 0.9;
+    padding: 1.4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem;
+    box-shadow: 0rem .6rem .1rem hsla(249, 10%, 26%, 0.25);
+    row-gap: 2rem;
+}
+.input{
+   padding: .9rem;
+   border-radius: 5px;
+   width: 100%;
+}
+
+.input_area{
+    position: relative;
+}
+.bottom{
+    padding: .9rem;
+    border-radius: 5px;
+    background-color:var(--primary-color-green);
+    color: var(--white-color);
+    line-height: 25px;
+    font-size:.8rem;
+    font-weight: var(--font-semi-bold);
+    letter-spacing: .1rem;
+    box-shadow:.1rem .1rem .1rem #3ab482,
+                inset -.05rem -.05rem 0rem #3ab482 ;
+}
+.form_text{
+    text-align: center;
+    font-size: .65rem;
+    color:#888;
+    text-align: center;
+}
+
+.terms{
+    font-size: .7rem;
+    color: var(--primary-color-red);
+    font-weight:var(--font-semi-bold);
+    outline: none;
+}
+::placeholder{
+    color:#555;
+    opacity: 1;
+    font-weight: var(--font-bold);
+    font-size: .9rem;
+}
+
+.input_error{
+    position: absolute;
+    right: 1.2rem;
+    bottom: 1rem;
+    visibility: hidden;
+    font-size: 1.6rem;
+    color: var(--primary-color-red);
+}
+
+ small{
+     color:var(--primary-color-red);
+     right: 0;
+     top: 3.7rem;
+     position: absolute;
+     font-style: italic;
+     opacity: .8;
+     visibility:hidden;
+ }
+
+@media screen and (min-width:586px){
+    .section{
+        width: 70%;
+    }
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text{
+        font-size: 2.5rem;
+    }
+}
+
+
+
+@media screen and (min-width:1440px) {
+    .section{
+        padding: 10rem 0 2.5rem;
+        width: 85vw;
+    }
+    .container{
+        max-width: 1920px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .section_two{
+        width: 42%;
+    }
+    
+    .top{
+        width: 100%;
+        padding: .5rem
+    }
+    .input_form{
+        row-gap: 1.5rem
+    }
+    .input{
+        padding: 0.8rem 2rem;
+     }
+     .text{
+        font-size: 3.2rem;
+        line-height: 65px;
+    }
+    .section_info{
+        text-align: initial;
+    }
+    .section_title{
+        text-align: initial;
+    }
+    .section_one{
+        margin-top: 5rem;
+    }
+    .form_text{
+        margin-top:-.5rem;
+    }
+    body{
+        background: url(valorant3.jpg) var(--primary-color-red)
+    }
+    .top{
+        padding: 1rem 2rem;
+    }
+    .form{
+        padding: 2.5rem;
+    }
+}
+
+.input_area.success input {
+    border-color: #3ab482;
+}
+.input_area.error input {
+    border-color:var(--primary-color-red);
+}
+.input_area.error img.input_error{
+    visibility: visible;
+}
+.input_area.error small{
+    visibility: visible;
+}
